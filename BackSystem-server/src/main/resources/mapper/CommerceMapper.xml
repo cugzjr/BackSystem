@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xxxx.server.mapper.CommerceMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.xxxx.server.pojo.Commerce">
+        <id column="commerceid" property="commerceid" />
+        <result column="commodityid" property="commodityid" />
+        <result column="sellerid" property="sellerid" />
+        <result column="buyerid" property="buyerid" />
+        <result column="place" property="place" />
+        <result column="time" property="time" />
+        <result column="price" property="price" />
+        <result column="state" property="state" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        commodityid, sellerid, buyerid, place, time, price, state, commerceid
+    </sql>
+
+</mapper>
